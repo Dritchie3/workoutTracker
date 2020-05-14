@@ -3,10 +3,10 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-// const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-// //Connect to the Mongo DB
-// mongoose.connect(MONGODB_URI);
+//Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
 
 const PORT = 8080;
 
