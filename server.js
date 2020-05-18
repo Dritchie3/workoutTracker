@@ -14,7 +14,7 @@ const MONGODB_URI = process.env.MONGODB_URI || process.env.LOCAL;
     useUnifiedTopology: true
 });
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
