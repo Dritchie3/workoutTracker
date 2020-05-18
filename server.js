@@ -8,7 +8,7 @@ const MONGODB_URI = process.env.MONGODB_URI || process.env.LOCAL;
 
 //Connect to the Mongo DB
 //mongoose.connect( process.env.REMOTE, {
- mongoose.connect(MONGODB_URI  {
+ mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true
